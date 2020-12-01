@@ -4,7 +4,7 @@
 	"description": "oracle instant client for the current operative system",
 	"main": "index.js",
 	"scripts": {
-		"install": "node install.js"
+		"install11": "node install.js"
 	},
 	"repository": {
 		"type": "git",

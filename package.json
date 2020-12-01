@@ -1,6 +1,6 @@
 {
 	"name": "oracle-instantclient",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Download the Oracle Instantclient depending on the underlying operating system",
 	"main": "index.js",
 	"scripts": {

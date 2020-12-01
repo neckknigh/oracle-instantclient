@@ -1,14 +1,14 @@
 {
 	"name": "instantclient",
 	"version": "1.0.0",
-	"description": "oracle instant client for the current operative system",
+	"description": "Download the Oracle Instantclient depending on the underlying operating system",
 	"main": "index.js",
 	"scripts": {
 		"install": "node install.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://scm.open.com.co/jcvargas-repos/instantclient.git"
+		"url": "https://github.com/neckknigh/oracle-instantclient"
 	},
 	"keywords": [
 		"testing",
@@ -19,5 +19,6 @@
 	"dependencies": {
 		"axios": "^0.21.0",
 		"extract-zip": "^2.0.1"
-	}
+	},
+	"homepage": "https://github.com/neckknigh/oracle-instantclient"
 }

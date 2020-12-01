@@ -1,5 +1,5 @@
 {
-	"name": "instantclient",
+	"name": "oracle-instantclient",
 	"version": "1.0.0",
 	"description": "Download the Oracle Instantclient depending on the underlying operating system",
 	"main": "index.js",
@@ -12,9 +12,10 @@
 	},
 	"keywords": [
 		"testing",
+		"oracle",
 		"instantclient"
 	],
-	"author": "jcvargas",
+	"author": "jhonlavigne07@gmail.com",
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.21.0",

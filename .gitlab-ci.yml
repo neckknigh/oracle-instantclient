@@ -24,10 +24,6 @@ test:
   stage: test
   script:
     - node install.js
-  artifacts:
-    paths:
-      - reports/
-    expire_in: 1 hour
 
 
 

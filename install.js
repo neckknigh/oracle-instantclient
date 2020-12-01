@@ -124,8 +124,13 @@ function renameFolder() {
 	fs.renameSync(path.resolve(getBinaryFolder(), folder), path.resolve(getBinaryFolder(), "instantclient"))
 }
 
+function createBinFolder() {
+	fs.mkdirSync(getBinaryFolder())
+}
+
 
 const beginInstallation = async () => {
+	await createBinFolder()
 	await downloadFile();
 	await extractDownload()
 	renameFolder()

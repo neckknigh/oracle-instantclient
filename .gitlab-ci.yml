@@ -1,0 +1,36 @@
+
+image: node:latest
+
+before_script:
+  - if which ssh-agent; then eval $(ssh-agent -s) && echo "$SYNCDEV_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null; fi
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - install
+  - test
+
+install:
+  stage: install
+  script:
+    - git config --global http.sslVerify "false"
+    - npm config set strict-ssl false
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour      
+
+test:
+  stage: test
+  script:
+    - node install.js
+  artifacts:
+    paths:
+      - reports/
+    expire_in: 1 hour
+
+
+

@@ -1,0 +1,23 @@
+{
+	"name": "instantclient",
+	"version": "1.0.0",
+	"description": "oracle instant client for the current operative system",
+	"main": "index.js",
+	"scripts": {
+		"install": "node install.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://scm.open.com.co/jcvargas-repos/instantclient.git"
+	},
+	"keywords": [
+		"testing",
+		"instantclient"
+	],
+	"author": "jcvargas",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.0",
+		"extract-zip": "^2.0.1"
+	}
+}
